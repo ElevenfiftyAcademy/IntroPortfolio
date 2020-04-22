@@ -7,50 +7,16 @@ OPTIONAL - have them break into small groups, draw a house on a whiteboard, and 
 
 ---
 
-### Installation
-Have everyone install <a href="https://code.visualstudio.com/">Visual Studio Code</a> and install the Open-In-Browser extension.
-
-Have them make a folder (in command line if you feel adventurous) called IntroToCoding (NO SPACING!) and the following inside that folder (feel free to have them add the following inside vs.code):
-
-```
-  └── IntroToCoding
-      └── assets
-          └── img
-      └── index.html
-      └── styles.css
-```
+### Setup
+Have everyone create an account on CodePen and start a pen.
 
 ---
 
 ### HTML Basics
-Type `!` and hit `tab`.  You should see the boilerplate for `HTML` appear:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Intro Portfolio Starter</title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    
-  </body>
-</html>
-```
+Explain that CodePen is a quick tool to build out a webpage, test animations, test `CSS` selectors, but not a tool for a fully deployed website. You might touch on how the boxes are already linked together, and that the Body tag is where the `HTML` goes.
 
-Explain the `DOCTYPE`, `html`, `head`, and `body` tags, as well as the meta data => basically that this file is the only file that a browser sees that that these features help the browser know that it is looking at `HTML`.  
-
-Add the `CSS` link inside the `head` tag and explain how it links `CSS` to `HTML`.
-
-Now, go to <a href="https://fonts.google.com/">Google Fonts</a> and pick two fonts (the example uses `Acme` and `Raleway`).  To do so, hit the plus sign and see the snack bar at the bottom.  Expand it and show both the `link` tag and the `css properties` that Google automatically builds out.
-
-Take the `link` tag, copy it, and add it ABOVE your `styles.css` link.
-
-Now go to your `styles.css` file and add the following:
+Now go to your `CSS` box and add the following:
 
 ```css
 body {
@@ -64,7 +30,7 @@ Show the changes and explain what you did.
 ---
 
 ### Navbar
-Now add the following code inside the `body` tag:
+Now add the following code inside the `HTML` box:
 
 ```html
 <nav class="navbar">
@@ -78,7 +44,7 @@ Now add the following code inside the `body` tag:
 
 Explain what `HTML` tags do, as well as the difference between `classes` and `ids`.  
 
-Now, go to `styles.css` and add the following, explaining as you build:
+Now, go to `CSS` and add the following, explaining as you build:
 
 ```css
 nav {
@@ -154,6 +120,7 @@ h1 {
   width: 100vw;
   height: 30vh;
   padding-top: 3em;
+  /* Don't forget to have the class go choose an image for the background */
   background: url('https://images.unsplash.com/photo-1516821371801-280cf8069a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1800&q=80') center 75% no-repeat fixed;
   background-size: cover;
 }
@@ -189,18 +156,14 @@ Add the following to your `HTML`:
     </div>
     <div id="about-content">
       <h2>Your Name</h2>
+      <!-- Have the class choose an ipsum off the internet, and explain what an ipsum is -->
       <p>Spicy jalapeno bacon ipsum dolor amet biltong bresaola tongue fatback brisket short loin. Brisket pancetta picanha boudin porchetta chicken, short ribs buffalo turducken kielbasa. Short ribs pork pork belly porchetta pastrami turducken. Shank fatback sausage flank corned beef pig buffalo porchetta short loin beef picanha meatloaf. Hamburger shank bresaola meatball sausage pastrami landjaeger tri-tip flank shoulder picanha bacon fatback pork belly. Capicola ham turkey t-bone, kevin shankle chicken buffalo picanha pig short loin bresaola. Landjaeger pig pastrami, pancetta swine biltong pork loin prosciutto kevin sausage t-bone.</p>
-    </div>
-    <div id="social-btns">
-        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
-        <a href="#"><i class="fab fa-github fa-3x"></i></a>
-        <a href="#"><i class="fab fa-codepen fa-3x"></i></a>
     </div>
   </section>
 </div>
 ```
 
-We are using <a href="https://baconipsum.com/">Bacon Ipsum</a> as well as <a href="https://fontawesome.com/">Font Awesome Icons</a>.  Go ahead and also have them add a profile picture from their computer or facebook or whatever and paste it into the `assets/img` folder.
+We are using <a href="https://baconipsum.com/">Bacon Ipsum</a>.  Go ahead and also have them add a profile picture from their computer or facebook or whatever and paste it into the `assets/img` folder.
 
 Now, add the following to your `CSS`, explaining as you build:
 
@@ -236,15 +199,6 @@ h2 {
   width: 40vw;
   float: right;
 }
-
-#social-btns a {
-  color: darkred;
-  margin: 1em;
-}
-
-#social-btns a:hover {
-  color: grey;
-}
 ```
 
 This will get you through the whole build, hopefully.
@@ -252,6 +206,6 @@ This will get you through the whole build, hopefully.
 ---
 
 ### Expanding
-If for some reason you have time, feel free to add the contact section, using <a href="https://formspree.io/">Formspree</a> for the form.  You will likely not have time, however.
+If for some reason you have time, feel free to add the contact section, using <a href="https://formspree.io/">Formspree</a> for the form.  You will likely not have time.
 
 Good luck.
